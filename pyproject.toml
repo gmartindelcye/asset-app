@@ -1,0 +1,24 @@
+
+[project]
+name = "asset_app"
+version = "0.1.0"
+description = "Asset Control for use of Phalkon and Netdocuments"
+authors = [
+    {name = "Gabriel Martin del Campo y Eternod", email = "gabrielmartindelcampo@luzcapital.com"},
+]
+dependencies = [
+    "fastapi>=0.95.2",
+    "sqlmodel>=0.0.8",
+    "alembic>=1.11.1",
+    "python-dotenv>=1.0.0",
+    "uvicorn>=0.22.0",
+    "passlib[bcrypt]>=1.7.4",
+    "python-jose[cryptography]>=3.3.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
